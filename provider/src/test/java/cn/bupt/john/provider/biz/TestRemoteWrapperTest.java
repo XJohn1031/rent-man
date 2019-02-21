@@ -2,16 +2,21 @@ package cn.bupt.john.provider.biz;
 
 import javax.annotation.Resource;
 
-import cn.bupt.john.provider.ProviderApplicationTests;
-import org.junit.Test;
 import cn.bupt.john.wrapper.TestRemoteWrapper;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  *
  * @author xjohn
  * @since 20 February 2019
  */
-public class TestRemoteWrapperTest extends ProviderApplicationTests {
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class TestRemoteWrapperTest {
 
 	@Resource
 	private TestRemoteWrapper testRemoteWrapper;

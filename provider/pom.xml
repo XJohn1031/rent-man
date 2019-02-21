@@ -3,10 +3,9 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.13.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<artifactId>rent-man</artifactId>
+		<groupId>cn.bupt.john</groupId>
+		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>cn.bupt.john</groupId>
 	<artifactId>rent-man.provider</artifactId>
@@ -43,7 +42,6 @@
 			<groupId>cn.bupt.john</groupId>
 			<artifactId>rent-man.service</artifactId>
 			<version>1.0-SNAPSHOT</version>
-			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -56,16 +54,33 @@
 			<groupId>org.apache.zookeeper</groupId>
 			<artifactId>zookeeper</artifactId>
 			<version>3.4.6</version>
-			<type>pom</type>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
 		<dependency>
 			<groupId>org.apache.curator</groupId>
 			<artifactId>curator-framework</artifactId>
-			<version>2.7.1</version>
+			<version>4.0.1</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-client</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-client</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>cn.bupt.john</groupId>
+			<artifactId>rent-man.service</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 
 	</dependencies>
 
